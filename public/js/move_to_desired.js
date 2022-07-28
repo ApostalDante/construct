@@ -3,29 +3,30 @@ const home = document.getElementById('home');
 const contact = document.getElementById('contact');
 
 document.querySelector("#btnHome").onclick = function () {
-    home.scrollIntoView(); // Прокрутка до верхней границы
-    home.scrollIntoView(false); // Прокрутка до нижней границы
+    home.scrollIntoView({ behavior: "smooth", block: "start" });
 };
+
+document.querySelector("#btnAbout").onclick = schowMessage;
+
+document.querySelector("#btnServiced").onclick = schowMessage;
+
+document.querySelector("#btnWork").onclick = schowMessage;
 
 document.querySelector("#btnContact").onclick = function () {
-    contact.scrollIntoView(false); // Прокрутка до верхней границы
-    contact.scrollIntoView(); // Прокрутка до нижней границы
+    contact.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
-
-function hi() {
+function schowMessage() {
     alert('отсутствует макет, пока пусто');
 };
 
+document.querySelector("#footerLinkHome").onclick = function () {
+    home.scrollIntoView({ behavior: "smooth", block: "start" });
+};
 
-function schowElement(element) {
-    element.scrollIntoView(); // Прокрутка до верхней границы
-    element.scrollIntoView(false);// Прокрутка до нижней границы
-}
+document.querySelector("#btnAPlan").onclick = schowMessage;
+document.querySelector("#btnManage").onclick = schowMessage;
+document.querySelector("#btnBuild").onclick = schowMessage;
 
-//document.querySelector("#btnContact").onclick = schowElement;
-//document.querySelector("#btnHome").onclick = hi;
-document.querySelector("#btnServiced").onclick = hi;
-document.querySelector("#btnWork").onclick = hi;
-document.querySelector("#btnAbout").onclick = hi;
+
 
