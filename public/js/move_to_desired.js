@@ -12,6 +12,14 @@ document.querySelector("#btnServiced").onclick = schowMessage;
 
 document.querySelector("#btnWork").onclick = schowMessage;
 
+document.querySelector("#btnAPlan").onclick = schowMessage;
+
+document.querySelector("#btnManage").onclick = schowMessage;
+
+document.querySelector("#btnBuild").onclick = schowMessage;
+
+document.querySelector("#btnAllService").onclick = schowMessage;
+
 document.querySelector("#btnContact").onclick = function () {
     contact.scrollIntoView({ behavior: "smooth", block: "start" });
 };
@@ -23,10 +31,12 @@ function schowMessage() {
 document.querySelector("#footerLinkHome").onclick = function () {
     home.scrollIntoView({ behavior: "smooth", block: "start" });
 };
-
-document.querySelector("#btnAPlan").onclick = schowMessage;
+function test() {
+    alert('test');
+}
+/*document.querySelector("#btnAPlan").onclick = schowMessage;
 document.querySelector("#btnManage").onclick = schowMessage;
-document.querySelector("#btnBuild").onclick = schowMessage;
+document.querySelector("#btnBuild").onclick = schowMessage;*/
 
 
 
