@@ -5,6 +5,7 @@
 	<title>konstru</title>
 	<link rel="stylesheet" href="css/stlyle.css">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -24,9 +25,9 @@
 									<p>An award-winning construction management firm</p>
 								</div>
 							</div>
-							<div class="header__row_link">
+							<div class="header__row_scrol">
 								<div class="header__content_row">
-									<button type="button" id="scroll_down">
+									<button class="button_style" type="button" id="scroll_down">
 										SCRoLL DoWN
 									</button>
 								</div>
@@ -38,11 +39,13 @@
 						<div><img src="/src/img/projeco-logo-black.png" alt=""></div>
 					</div>
 					<div class="navbar__nav_link">
-						<div>
+						<div class="navbar__nav_button">
 							<button type="button" class="logo__link" id="btnHome">HoME</button>
-							<button type="button" class="logo__link" id="btnAbout">ABOuT</button>
-							<button type="button" class="logo__link" id="btnServiced">SeRVICES</button>
-							<button type="button" class="logo__link" id="btnWork">WoRK</button>
+							<button type="button" class="logo__link" id="btnAbout"
+								onclick="schowMessage()">ABOuT</button>
+							<button type="button" class="logo__link" id="btnServiced"
+								onclick="schowMessage()">SeRVICES</button>
+							<button type="button" class="logo__link" id="btnWork" onclick="schowMessage()">WoRK</button>
 							<button type="button" class="logo__link" id="btnContact">CONTaCT</button>
 						</div>
 					</div>
@@ -90,9 +93,9 @@
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
 							tincidunt ut laoreet dolore magna aliquam erat.</p>
 					</div>
-					<div class="services__title_button"><button type="button" id="btnAllService">aLl sERVICEs</button>
+					<div class="services__title_button"><button type="button" class="button_style"
+							id="btnAllService">aLl sERVICEs</button>
 					</div>
-					<!--<a href="#">aLl sERVICEs</a>-->
 				</div>
 				<div class="services__row">
 					<div class="services__row_info">
@@ -133,7 +136,9 @@
 						<div class="get__row_text">
 							<h2>Want to build something amazing?</h2>
 						</div>
-						<div class="get__row_button"><a href="#">GeT IN tOUcH</a></div>
+						<div class="get__row_button"><button type="button" class="button_style" id="btnGetIn">GeT IN
+								tOUcH</button></div>
+						<!--<a href="#">GeT IN tOUcH</a>-->
 					</div>
 				</div>
 			</div>
@@ -144,10 +149,13 @@
 							<h2>Newsletter Signup</h2>
 						</div>
 						<div class="newsletter__row_post">
-							<form action="#" method="post">
-								<input class="newsletter__post_input" placeholder="test@youremail.com" type="text"
-									name="username" value="">
-								<button class="newsletter__post_button" type="submit">sIgNUP</button>
+							<form name="publish" class="newsletter__row_form">
+								<!-- action="#" method="post" - добавить -->
+								<input class="newsletter__post_input" id="inputForm" placeholder="test@youremail.com"
+									type="text" value="">
+								<!--name="username" - добавить -->
+								<div class="newsletter__post_button"><button onclick="schowMessagePost()"
+										class="button_style" type="submit">sIgNUP</button></div>
 							</form>
 						</div>
 					</div>
@@ -161,7 +169,7 @@
 						<div class="footer__row">
 							<div class="footer__row_company">
 								<div class="footer__content_row">
-									<h2>CoMPaNY</h2>
+									<h2 class="footer__row_h2">CoMPaNY</h2>
 									<img src="/src/img/projeco-logo.png" alt="">
 									<p>
 										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
@@ -171,33 +179,29 @@
 							</div>
 							<div class="footer__row_links">
 								<div class="footer__content_row">
-									<div class="footer__links">
-										<h2>LiNKs</h2>
-									</div>
+									<h2 class="footer__row_h2">LiNKs</h2>
 									<div class="footer__links_row">
 										<div class="footer__links1">
 											<ul>
-												<li><a href="#" id="ooterLinkHome">HoMe</a></li>
-												<!--<li><button type="button" id="footerBtnHome">HoME</button></li>-->
-												<!--<button type="button" id="footerBtnHome">HoME</button>-->
-												<li><a href="#">aBoUT</a></li>
-												<li><a href="#">SeRVICeS </a></li>
-												<li><a href="#">PrOJeCTS</a></li>
-												<li><a href="#">CoNTACT uS</a></li>
+												<li><a href="##" id="footerLinkHome">HoMe</a></li>
+												<li><a href="##" id="footerAbout">aBoUT</a></li>
+												<li><a href="##" id="footerServices">SeRVICeS</a></li>
+												<li><a href="##" id="footerProjcts">PrOJeCTS</a></li>
+												<li><a href="##" id="footerContact">CoNTACT uS</a></li>
 											</ul>
 										</div>
 										<div class="footer__links1">
 											<ul>
-												<li><a href="#">FaQ </a></li>
-												<li><a href="#">TeRMs</a></li>
-												<li><a href="#">CaREERs</a></li>
+												<li><a href="##" id="footerFaq">FaQ</a></li>
+												<li><a href="##" id="footerTerms">TeRMs</a></li>
+												<li><a href="##" id="footerCareers">CaREERs</a></li>
 											</ul>
 										</div>
 										<div class="footer__links1">
 											<ul>
-												<li><a href="#">BLoG</a></li>
-												<li><a href="#">PaRTNERs</a></li>
-												<li><a href="#">NeWs</a></li>
+												<li><a href="##" id="footerBlog">BLoG</a></li>
+												<li><a href="##" id="footerParters">PaRTNERs</a></li>
+												<li><a href="##" id="footerNews">NeWs</a></li>
 											</ul>
 										</div>
 									</div>
@@ -205,8 +209,8 @@
 							</div>
 							<div class="footer__row_contact">
 								<div id="contact" class="footer__content_row">
-									<h2>CoNTACT uS</h2>
-									<p>213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name</p>
+									<h2 class="footer__row_h2">CoNTACT uS</h2>
+									<p>213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name</p>
 									<p>+23 994 233 4022</p>
 									<p>info@konstruct.com</p>
 								</div>
