@@ -311,14 +311,6 @@ body {
   word-spacing: 30px;
 }
 
-.menu_btn {
-  display: none;
-}
-
-.menu {
-  display: none;
-}
-
 .logo__link {
   text-transform: uppercase;
   font-weight: 600;
@@ -629,6 +621,8 @@ body {
   display: flex;
 }
 
+/* Breakpoints */
+
 /* Breakpoints 1180px - 700px*/
 
 
@@ -707,85 +701,88 @@ body {
 
   /* navbar */
   .navbar__nav_img {
-    flex-basis: 20%;
-    text-align: center;
-    padding: 25px 0px 0px 0px;
+    flex-basis: 85%;
+    text-align: left;
+    padding: 25px 0px 0px 30px;
   }
 
   .navbar__nav_link {
-    flex-basis: 80%;
-    padding: 24px 0px 0px 0px;
+    flex-basis: 15%;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
   }
+
+  /*-------------------------*/
+
+  /* Гамбургер иконка */
+  .menu_btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .menu_btn span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222222;
+    transition: all 0.5s;
+  }
+
+  .menu_btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+  }
+
+  .menu_btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+  }
+
+  /* Меняем гамбургер иконку, когда меню открыто */
+  .menu_btn.active span:nth-of-type(1) {
+    display: none;
+  }
+
+  .menu_btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+
+  .menu_btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+  }
+
+  /* Меню, которое будет появляться */
+  .navbar__nav_button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    padding: 15px;
+    background: #FFEFBA;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+  }
+
+  .navbar__nav_button.active {
+    transform: translateX(0);
+  }
+
+  .navbar__nav_button button {
+    list-style-type: none;
+  }
+
+  /*-----------------------------*/
 }
 
-/*-------------------------*/
 
-/* Гамбургер иконка */
-.menu_btn {
-  display: block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-}
-
-.menu_btn span {
-  width: 30px;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #222222;
-  transition: all 0.5s;
-}
-
-.menu_btn span:nth-of-type(2) {
-  top: calc(50% - 5px);
-}
-
-.menu_btn span:nth-of-type(3) {
-  top: calc(50% + 5px);
-}
-
-/* Меняем гамбургер иконку, когда меню открыто */
-.menu_btn.active span:nth-of-type(1) {
-  display: none;
-}
-
-.menu_btn.active span:nth-of-type(2) {
-  top: 50%;
-  transform: translate(-50%, 0%) rotate(45deg);
-}
-
-.menu_btn.active span:nth-of-type(3) {
-  top: 50%;
-  transform: translate(-50%, 0%) rotate(-45deg);
-}
-
-/* Меню, которое будет появляться */
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  background: #FFEFBA;
-  transform: translateX(-100%);
-  transition: transform 0.5s;
-}
-
-.menu.active {
-  transform: translateX(0);
-}
-
-.menu button {
-  list-style-type: none;
-}
-
-/*-----------------------------*/
 
 /* Breakpoints 400px - 250px*/
 
