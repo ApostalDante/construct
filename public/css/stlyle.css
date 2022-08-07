@@ -317,7 +317,6 @@ body {
 }
 
 .logo__link:hover {
-  font-weight: bold;
   color: #00A4E5;
 }
 
@@ -418,6 +417,14 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   /* background-color: rgba(28, 28, 28, 0);*/
+}
+
+.slider_next {
+  display: none;
+}
+
+.slider_prev {
+  display: none;
 }
 
 /*.about__link_text a {
@@ -643,101 +650,32 @@ body {
 
   /* about */
 
-  .about {
-    max-width: 941px;
-    min-height: 344px;
-    margin: 0px auto;
-    padding: 57px 0px 120px 0px;
-  }
-
-  .about h2 {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    letter-spacing: 2.30625px;
-    text-transform: uppercase;
-  }
-
-  .about__line {
-    width: 50px;
-    padding: 10px 0px 0px 0px;
-    margin: 0 auto;
-    border-bottom: 2px solid #00A4E5;
-  }
-
   .about__story {
     display: flex;
+    flex-direction: column;
   }
 
   .about__story_text {
-    font-size: 13px;
-    line-height: 23px;
-    letter-spacing: 0.1875px;
-    padding: 60px 0px 0px 0px;
-    width: 405px;
-    min-height: 101px;
-  }
-
-  /*.about__story_text button {
-  background-color: rgba(28, 28, 28, 0);
-}*/
-
-  .about__story_text .about__text_title {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 27px;
-    padding: 0px 0px 30px 0px;
-  }
-
-  .about__story_text span {
-    color: #00A4E5;
+    width: 100%;
+    padding: 60px 10px 0px 20px;
   }
 
   .about__story_link {
     display: flex;
-    padding: 84px 0px 0px 0px;
+    justify-content: space-around;
+    padding: 24px 0px 0px 0px;
   }
 
   .about__story_row1 {
-    width: 140px;
-    height: 224px;
-    margin: 0px 0px 0px 76px;
-    background: url("/src/img/WE PLAN.jpg") 0 0/140px 224px no-repeat;
+    margin: 0;
   }
 
   .about__story_row2 {
-    width: 140px;
-    height: 224px;
-    margin: 0px 0px 0px 16px;
-    background: url("/src/img/WE MANAGE.jpg") 0 0/140px 224px no-repeat;
+    margin: 0;
   }
 
   .about__story_row3 {
-    width: 140px;
-    height: 224px;
-    margin: 0px 0px 0px 16px;
-    background: url("/src/img/WE BUILD.jpg") 0 0/140px 224px no-repeat;
-  }
-
-  .about__link_text {
-    max-width: 68px;
-    max-height: 58px;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.1875px;
-    text-transform: uppercase;
-    padding: 15px 0px 0px 14px;
-  }
-
-  .about__link_text button {
-    text-align: left;
-    font-size: 24px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    /* background-color: rgba(28, 28, 28, 0);*/
+    margin: 0;
   }
 }
 
@@ -914,6 +852,39 @@ body {
   }
 
   /*-----------------------------*/
+
+  /* about */
+
+  .about__story {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__story_text {
+    width: 100%;
+    padding: 60px 10px 0px 20px;
+  }
+
+  .about__story_link {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0px 0px 0px;
+  }
+
+  .about__story_row1 {
+    width: 130px;
+    margin: 0;
+  }
+
+  .about__story_row2 {
+    width: 130px;
+    margin: 0;
+  }
+
+  .about__story_row3 {
+    width: 130px;
+    margin: 0;
+  }
 }
 
 
@@ -937,5 +908,77 @@ body {
   .logo__link {
     padding: 0px 5px 0px 0px;
     font-size: 17px;
+  }
+
+  /* about */
+
+  /* slider*/
+  .slider_row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .slider {
+    display: flex;
+    width: 140px;
+    height: 224px;
+    border: 1px solid black;
+    overflow: hidden;
+  }
+
+  .slider_line {
+    height: 224px;
+    width: 420px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+  }
+
+  .slider_next {
+    display: block;
+    width: 40px;
+    height: 20px;
+    margin: 112px 25px 0px 0px;
+  }
+
+  .slider_prev {
+    display: block;
+    width: 40px;
+    height: 20px;
+    margin: 112px 0px 0px 15px;
+  }
+
+  /*slider end*/
+  /*---------------------*/
+  .about__story {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__story_text {
+    width: 100%;
+    padding: 60px 10px 0px 20px;
+  }
+
+  .about__story_link {
+    display: flex;
+    padding: 0;
+  }
+
+  .about__story_row1 {
+    width: 140px;
+    margin: 0;
+  }
+
+  .about__story_row2 {
+    width: 140px;
+    margin: 0;
+  }
+
+  .about__story_row3 {
+    width: 140px;
+    margin: 0;
   }
 }
