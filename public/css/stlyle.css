@@ -386,21 +386,21 @@ body {
   width: 140px;
   height: 224px;
   margin: 0px 0px 0px 76px;
-  background: url("/src/img/WE PLAN.jpg") 0 0/140px 224px no-repeat;
+  background: url("/public/img/WE PLAN.jpg") 0 0/140px 224px no-repeat;
 }
 
 .about__story_row2 {
   width: 140px;
   height: 224px;
   margin: 0px 0px 0px 16px;
-  background: url("/src/img/WE MANAGE.jpg") 0 0/140px 224px no-repeat;
+  background: url("/public/img//WE MANAGE.jpg") 0 0/140px 224px no-repeat;
 }
 
 .about__story_row3 {
   width: 140px;
   height: 224px;
   margin: 0px 0px 0px 16px;
-  background: url("/src/img/WE BUILD.jpg") 0 0/140px 224px no-repeat;
+  background: url("/public/img/WE BUILD.jpg") 0 0/140px 224px no-repeat;
 }
 
 .about__link_text {
@@ -516,7 +516,7 @@ body {
 .get__kont {
   max-width: 1440px;
   height: 499px;
-  background-image: url("/src/img/bg.png");
+  background-image: url("/public/img/bg.png");
   background-position: 50% 50%;
   background-size: auto 100%;
   margin: 0 auto;
