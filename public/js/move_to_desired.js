@@ -9,7 +9,7 @@ function schowMessage() {
 function schowMessagePost() {
     let form = document.getElementById("inputForm");
     let formInfo = form.value;
-    alert(`отсутствует бэк.\n Вы вписали: ${formInfo}`);
+    alert(`отключенно.\n Вы вписали: ${formInfo}`);
 }
 
 document.querySelector("#btnHome").onclick = function () {
@@ -41,7 +41,7 @@ document.querySelector("#footerLinkHome").onclick = function () {
     home.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
-document.querySelector("#footerAbout").onclick = schowMessage;
+/*document.querySelector("#footerAbout").onclick = schowMessage;
 
 document.querySelector("#footerServices").onclick = schowMessage;
 
@@ -61,7 +61,7 @@ document.querySelector("#footerBlog").onclick = schowMessage;
 
 document.querySelector("#footerParters").onclick = schowMessage;
 
-document.querySelector("#footerNews").onclick = schowMessage;
+document.querySelector("#footerNews").onclick = schowMessage;*/
 
 
 
