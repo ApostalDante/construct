@@ -704,6 +704,23 @@ body {
     width: auto;
   }
 
+  /* footer */
+
+  .footer__row {
+    margin: 0px 5px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .footer__row_socials {
+    margin: 0px 15px 0px 0px;
+  }
+
+
+  .footer__links_row a:hover {
+    color: #FFFFFF;
+  }
+
 }
 
 /* Breakpoints 944px - 500px*/
@@ -751,6 +768,11 @@ body {
 
   .services__row_info {
     margin: 10px 25px 0px 25px;
+  }
+
+  /* footer */
+  .footer__row_socials {
+    flex-basis: 40px;
   }
 
 }
@@ -816,6 +838,33 @@ body {
 
   .newsletter__row_post {
     width: 350px;
+  }
+
+  /* footer */
+
+  .footer__nav {
+    height: 100%;
+
+  }
+
+  .footer__row {
+    margin: 0px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .footer__row_company {
+    max-width: 500px;
+  }
+
+  .footer__row_links {
+    max-width: 500px;
+  }
+
+
+  .footer__row_contact {
+    max-width: 500px;
   }
 
 }
