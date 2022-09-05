@@ -8,4 +8,4 @@ https://www.figma.com/file/zR1XfguUZ5wWWOy6ah30Xq/konstruct-template
 
 Мобильная версия:
 
-![Упс, что-то пошло не так](/public/img/konstruct.jpg)
+![Упс, что-то пошло не так](/public/img/konstructM.jpg)
