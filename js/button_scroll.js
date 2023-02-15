@@ -21,4 +21,3 @@
 
     btnScrollDown.addEventListener('click', scrollDown);
 })();
-  /* end Scroll Down Button */
